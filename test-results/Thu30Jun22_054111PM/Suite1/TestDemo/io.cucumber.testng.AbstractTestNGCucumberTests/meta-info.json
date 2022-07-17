@@ -1,0 +1,26 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "dataProvider": "scenarios",
+        "description": "Runs Cucumber Scenarios",
+        "groups": [
+          "cucumber"
+        ],
+        "name": "runScenario",
+        "resultFileName": "RunScenario",
+        "sign": "AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@7f77e91b]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1656591071220,
+      "duration": 0,
+      "result": "skip",
+      "passPer": 0.0
+    }
+  ]
+}

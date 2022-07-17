@@ -1,0 +1,33 @@
+{
+  "total": 2,
+  "pass": 2,
+  "fail": 0,
+  "skip": 0,
+  "classes": [
+    "src/test/resources/features/Login2.feature"
+  ],
+  "envInfo": {
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "0",
+      "qaf-Version": "3.1",
+      "qaf-Build-Time": "27-Feb-2022 14:37:01"
+    },
+    "run-parameters": {
+      "scenario.file.loc": "src/test/resources/features/Login2.feature",
+      "step.provider.pkg": "com.ntrs.stepDefinitions"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_202",
+      "os.arch": "amd64",
+      "host": "Manavi-Saini",
+      "os.name": "Windows 10",
+      "user.name": "91994",
+      "os.version": "10.0"
+    }
+  },
+  "startTime": 1656590818766,
+  "endTime": 1656590831345
+}

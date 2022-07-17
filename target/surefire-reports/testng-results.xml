@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="65001" started-at="2022-07-14T16:48:39Z" finished-at="2022-07-14T16:49:44Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@4973813a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test Demo" duration-ms="65001" started-at="2022-07-14T16:48:39Z" finished-at="2022-07-14T16:49:44Z">
+      <class name="com.ntrs.runner.CucumberRunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="setUpClass" is-config="true" duration-ms="301" started-at="2022-07-14T22:18:39Z" finished-at="2022-07-14T22:18:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="runScenario" duration-ms="24136" started-at="2022-07-14T22:18:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-14T22:19:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Google Navigation test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Google Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="runScenario" duration-ms="20169" started-at="2022-07-14T22:19:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-14T22:19:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Ultimate QA Navigation test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Google Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="runScenario" duration-ms="20109" started-at="2022-07-14T22:19:23Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-14T22:19:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Webdriver URL Navigation test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Google Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ntrs.runner.CucumberRunnerTest@3a883ce7]" name="tearDownClass" is-config="true" duration-ms="278" started-at="2022-07-14T22:19:44Z" finished-at="2022-07-14T22:19:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ntrs.runner.CucumberRunnerTest -->
+      <class name="com.ntrs.runner.CucumberRunnerTest2">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@4973813a]" name="setUpClass" is-config="true" duration-ms="255" started-at="2022-07-14T22:18:39Z" finished-at="2022-07-14T22:18:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@4973813a]" name="runScenario" duration-ms="5452" started-at="2022-07-14T22:18:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-14T22:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Swag Labs Navigation test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Swag Labs Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@4973813a]" name="runScenario" duration-ms="8390" started-at="2022-07-14T22:18:45Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-14T22:18:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Telerik Navigation test"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Swag Labs Login feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.ntrs.runner.CucumberRunnerTest2@4973813a]" name="tearDownClass" is-config="true" duration-ms="25" started-at="2022-07-14T22:18:53Z" finished-at="2022-07-14T22:18:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.ntrs.runner.CucumberRunnerTest2 -->
+    </test> <!-- Test Demo -->
+  </suite> <!-- Suite1 -->
+</testng-results>

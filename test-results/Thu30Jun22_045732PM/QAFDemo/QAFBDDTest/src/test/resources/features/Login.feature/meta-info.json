@@ -1,0 +1,54 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "Feature": " Google Login feature",
+        "groups": [
+          "LoginTest",
+          "Test1"
+        ],
+        "lineNo": 27.0,
+        "name": "Ultimate QA Navigation test",
+        "reference": "src/test/resources/features/Login.feature",
+        "resultFileName": "UltimateQANavigationTest",
+        "sign": "src.test.resources.features.Login.feature.Ultimate QA Navigation test()[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1656588453998,
+      "duration": 2257,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "Feature": " Google Login feature",
+        "groups": [
+          "LoginTest",
+          "Test1"
+        ],
+        "lineNo": 23,
+        "name": "Google Navigation test",
+        "reference": "src/test/resources/features/Login.feature",
+        "resultFileName": "GoogleNavigationTest",
+        "sign": "src.test.resources.features.Login.feature.Google Navigation test()[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1656588456258,
+      "duration": 2116,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

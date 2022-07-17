@@ -1,0 +1,54 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "Feature": " Swag Labs Login feature",
+        "groups": [
+          "LoginTest",
+          "Test2"
+        ],
+        "lineNo": 23.0,
+        "name": "Swag Labs Navigation test",
+        "reference": "src/test/resources/features/Login2.feature",
+        "resultFileName": "SwagLabsNavigationTest",
+        "sign": "src.test.resources.features.Login2.feature.Swag Labs Navigation test()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1656590818766,
+      "duration": 3336,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "Feature": " Swag Labs Login feature",
+        "groups": [
+          "LoginTest",
+          "Test2"
+        ],
+        "lineNo": 27,
+        "name": "Telerik Navigation test",
+        "reference": "src/test/resources/features/Login2.feature",
+        "resultFileName": "TelerikNavigationTest",
+        "sign": "src.test.resources.features.Login2.feature.Telerik Navigation test()[pri:1003, instance:com.qmetry.qaf.automation.step.client.Scenario@3eb]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1656590822109,
+      "duration": 9236,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

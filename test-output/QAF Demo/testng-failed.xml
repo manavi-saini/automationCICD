@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [QAF Demo]" parallel="tests">
+  <test name="QAF-BDD-Test(failed)" parallel="tests">
+    <parameter name="scenario.file.loc" value="src/test/resources/features/Login.feature"/>
+    <parameter name="step.provider.pkg" value="com.ntrs.stepDefinitions"/>
+    <classes>
+      <class name="com.qmetry.qaf.automation.step.client.Scenario">
+        <methods>
+          <include name="setupSuit"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="scenario"/>
+          <include name="setupTest"/>
+          <include name="setupTest"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setupMethod"/>
+          <include name="afterMethod"/>
+          <include name="setupMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.qmetry.qaf.automation.step.client.Scenario -->
+    </classes>
+  </test> <!-- QAF-BDD-Test(failed) -->
+</suite> <!-- Failed suite [QAF Demo] -->

@@ -1,0 +1,252 @@
+[
+  {
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Navigating to a URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12521289600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Heroku app URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_heroku_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-17T13:13:07.511Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2408613400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Google Navigation test",
+        "description": "",
+        "id": "google-login-feature;google-navigation-test",
+        "after": [
+          {
+            "result": {
+              "duration": 4104315800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1596900400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I navigate to Google URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_google_url()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Navigating to a URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5143573400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Heroku app URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_heroku_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-17T13:13:28.204Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1106769900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Ultimate QA Navigation test",
+        "description": "",
+        "id": "google-login-feature;ultimate-qa-navigation-test",
+        "after": [
+          {
+            "result": {
+              "duration": 57792700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1591163800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I navigate to Ultimate URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_ultimate_url()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Navigating to a URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7499548200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to Heroku app URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_heroku_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-17T13:13:36.115Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1105258600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Webdriver URL Navigation test",
+        "description": "",
+        "id": "google-login-feature;webdriver-url-navigation-test",
+        "after": [
+          {
+            "result": {
+              "duration": 63220800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ntrs.utils.Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1347850900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I navigate to Webdriver URL",
+            "match": {
+              "location": "com.ntrs.stepDefinitions.LoginStepDefinition.i_navigate_to_webdriver_url()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          },
+          {
+            "name": "@Test1"
+          }
+        ]
+      }
+    ],
+    "name": "Google Login feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "google-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginTest",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Test1",
+        "type": "Tag",
+        "location": {
+          "line": 19,
+          "column": 12
+        }
+      }
+    ]
+  }
+]

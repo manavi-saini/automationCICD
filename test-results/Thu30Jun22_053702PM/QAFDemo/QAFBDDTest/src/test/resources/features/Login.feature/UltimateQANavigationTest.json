@@ -1,0 +1,41 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "io.cucumber.java.JavaStepDefinition@5398c895",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "io.cucumber.java.JavaStepDefinition@711e6621",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given I navigate to Ultimate URL",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 2286,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And I close browser",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 52,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": null
+}

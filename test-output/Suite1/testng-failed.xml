@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="classes">
+  <test name="Test Demo(failed)" parallel="classes">
+    <classes>
+      <class name="com.ntrs.runner.CucumberRunnerTest">
+        <methods>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.ntrs.runner.CucumberRunnerTest -->
+      <class name="com.ntrs.runner.CucumberRunnerTest2">
+        <methods>
+          <include name="runScenario"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.ntrs.runner.CucumberRunnerTest2 -->
+    </classes>
+  </test> <!-- Test Demo(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
