@@ -323,14 +323,6 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemProperties>
-						<property>
-							<name>env</name>
-							<value>uat</value>
-							<jvm.options>-Xmx256M</jvm.options>
-							<JAVA_TOOL_OPTIONS>file.encoding=UTF8</JAVA_TOOL_OPTIONS>
-						</property>
-					</systemProperties>
 				</configuration>
 			</plugin>
 
