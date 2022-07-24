@@ -22,8 +22,11 @@ Feature: Swag Labs Login feature
 
   Scenario: Swag Labs Navigation test
     Given I navigate to SwagLabs URL
-    #And I close browser
-    
+
+  #And I close browser
   Scenario: Telerik Navigation test
     Given I navigate to Telerik URL
-    #And I close browser
+
+  #And I close browser
+  Scenario: Navigating to Cypress URL
+    Given I navigate to Cypress URL

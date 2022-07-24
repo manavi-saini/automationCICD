@@ -16,21 +16,13 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@LoginTest @Test1
-Feature: Google Login feature
-  I want to use this template for my feature file
-  
-  Background: Navigating to a URL
-  Given I navigate to Heroku app URL
+@SanityTest
+Feature: Sanity Tests
+  I want to use this template for my sanity tests file
 
-  Scenario: Google Navigation test
-    Given I navigate to Google URL
-    #And I close browser
-        
+  Scenario: Swag Labs Navigation test
+    Given I navigate to SwagLabs URL
+
   Scenario: Ultimate QA Navigation test
     Given I navigate to Ultimate URL
-    #And I close browser
-    
-  Scenario: Webdriver URL Navigation test
-    Given I navigate to Webdriver URL
     #And I close browser
