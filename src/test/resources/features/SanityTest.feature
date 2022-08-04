@@ -22,7 +22,8 @@ Feature: Sanity Tests
 
   Scenario: Swag Labs Navigation test
     Given I navigate to SwagLabs URL
+    And I verify title "Swag Labs" is displayed
 
   Scenario: Ultimate QA Navigation test
     Given I navigate to Ultimate URL
-    #And I close browser
+    And I verify title "Automation Practice - Ultimate QA" is displayed

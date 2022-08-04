@@ -59,5 +59,10 @@ public class LoginStepDefinition {
 	public void i_close_browser() {
 		webProducts.closeBrowser();
 	}
+	
+	@Given("I verify title {string} is displayed")
+	public void i_verify_title(String title) {
+		webProducts.verifyTitle(title);
+	}
 
 }
