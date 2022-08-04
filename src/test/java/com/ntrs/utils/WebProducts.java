@@ -1,14 +1,15 @@
 package com.ntrs.utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import junit.framework.Assert;
 
 public class WebProducts {
 	
-	private WebDriver driver;
+	private RemoteWebDriver driver;
 	
-	public WebProducts(WebDriver driver) {
+	public WebProducts(RemoteWebDriver driver) {
 		this.driver = driver;
 	}
 	
