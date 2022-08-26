@@ -16,17 +16,14 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@LoginTest @Test2
-Feature: Swag Labs Login feature
-  I want to use this template for my feature file
+@SmokeTest
+Feature: Smoke Tests
+  I want to use this template for my sanity tests file
 
-  Scenario: Swag Labs Navigation test
+  Scenario: Smoke Test - Swag Labs Navigation test
     Given I navigate to SwagLabs URL
+    And I verify title "Swag Labs" is displayed
 
-  #And I close browser
-  Scenario: Telerik Navigation test
-    Given I navigate to Telerik URL
-
-  #And I close browser
-  Scenario: Navigating to Cypress URL
-    Given I navigate to Cypress URL
+  Scenario: Smoke Test - Ultimate QA Navigation test
+    Given I navigate to Ultimate URL
+    And I verify title "Automation Practice - Ultimate QA" is displayed

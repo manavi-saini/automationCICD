@@ -16,21 +16,17 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@LoginTest @Test1
-Feature: Google Login feature
+@RegressionTest2
+Feature: Regression Test 2
   I want to use this template for my feature file
-  
-  Background: Navigating to a URL
-  Given I navigate to Heroku app URL
 
-  Scenario: Google Navigation test
-    Given I navigate to Google URL
-    #And I close browser
-        
-  Scenario: Ultimate QA Navigation test
-    Given I navigate to Ultimate URL
-    #And I close browser
-    
-  Scenario: Webdriver URL Navigation test
-    Given I navigate to Webdriver URL
-    #And I close browser
+  Scenario: Regression Test - Swag Labs Navigation test
+    Given I navigate to SwagLabs URL
+
+  #And I close browser
+  Scenario: Regression Test - Telerik Navigation test
+    Given I navigate to Telerik URL
+
+  #And I close browser
+  Scenario: Regression Test - Navigating to Cypress URL
+    Given I navigate to Cypress URL

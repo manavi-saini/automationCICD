@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,6 +24,7 @@ public class WebDriverManagement {
 	private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>();
 	String SAUCE_USERNAME="mzs4";
 	String SAUCE_ACCESSKEY="4e822ae6-cd0a-4ffb-950c-8cbcea72f392";
+	String PERFECTO_ACCESSKEY="eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2ZDM2NmJiNS01NDAyLTQ4MmMtYTVhOC1kODZhODk4MDYyZjIifQ.eyJpYXQiOjE2NTk3NzQ1NDcsImp0aSI6ImQ2MmIwNzE0LTliZjUtNGYyMy1iNTZkLTQ4MTMxMGEyYWIwOCIsImlzcyI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsImF1ZCI6Imh0dHBzOi8vYXV0aDMucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL3RyaWFsLXBlcmZlY3RvbW9iaWxlLWNvbSIsInN1YiI6ImM2ODkxMjZhLTlmMzgtNGZkZi1iMTA2LTg4OWFhMDg1ZDc2MyIsInR5cCI6Ik9mZmxpbmUiLCJhenAiOiJvZmZsaW5lLXRva2VuLWdlbmVyYXRvciIsIm5vbmNlIjoiYjBmODE0NGYtNTQwMy00MjU3LThmY2QtM2IxNDRiOWZhYWE1Iiwic2Vzc2lvbl9zdGF0ZSI6ImQ0YmZkY2VmLTY4N2MtNGNlYS05MTJiLTZlYjQ0NzBlMDhiZiIsInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIHByb2ZpbGUgZW1haWwifQ.RQDAcR8imZqauW37cvWc1hkqul8KXuMQ2M6xhO559mQ";
 	
 	public WebDriverManagement() {
 		driverType = "Chrome";
@@ -34,21 +36,25 @@ public class WebDriverManagement {
 	}
 	
 	public RemoteWebDriver setBrowserDriver(String name) {
-		
+
 		System.out.println("Inside Webdriver = "+name);
-		
-		
+
+		// 		SauceLabs Code		
 		Map<String, Object> sauceOptions = new HashMap<>();
 		sauceOptions.put("username", SAUCE_USERNAME);
 		sauceOptions.put("accessKey", SAUCE_ACCESSKEY);
 		sauceOptions.put("build", "Test Build");
 		sauceOptions.put("name", name);
-		
+
+
+
+
 		if(driverType.equalsIgnoreCase("Firefox")) {
-			
+
 		}
 		else if(driverType.equalsIgnoreCase("Chrome")) {
-			
+
+			//	 		SauceLabs Code			
 			ChromeOptions browserOptions = new ChromeOptions();
 			browserOptions.setPlatformName("Windows 10");
 			browserOptions.setBrowserVersion("latest");
@@ -61,35 +67,9 @@ public class WebDriverManagement {
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			
-			
-						
-//			DesiredCapabilities cap = new DesiredCapabilities();
-//			cap.setCapability("sauce:options", sauceOpts);
-//			cap.setCapability("browserVersion", "latest");
-//			cap.setCapability("platformName", "Windows 10");
-//			
-//			// Adding WebdriverManager code
-//			WebDriverManager.chromedriver().setup();
-//
-//			cap.setCapability("browserName", "chrome");
-
-
-//			options.addArguments("--start-maximized");
-//			options.setAcceptInsecureCerts(true);
-						
-//			
-//			try {
-//				URL url = new URL("http://ondemand.apac-southeast-1.saucelabs.com:443/wd/hub");
-//				driver.set(new RemoteWebDriver(url, cap));
-//			} catch (MalformedURLException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-			
+			}									
 		}
-		
+
 		driver.get().manage().window().maximize();
 		return driver.get();
 	}

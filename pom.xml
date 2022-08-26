@@ -325,15 +325,21 @@
 						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng.xml</suiteXmlFile>
+								<suiteXmlFile>regressionTest.xml</suiteXmlFile>
 							</suiteXmlFiles>
+							<systemProperties>
+								<property>
+									<name>env</name>
+									<value>uat</value>								
+								</property>						
+							</systemProperties>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
 		<profile>
-			<id>sanity-tests</id>
+			<id>smoke-tests</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -348,8 +354,14 @@
 						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>sanitytest.xml</suiteXmlFile>
+								<suiteXmlFile>smokeTest.xml</suiteXmlFile>
 							</suiteXmlFiles>
+							<systemProperties>
+								<property>
+									<name>env</name>
+									<value>prod</value>								
+								</property>						
+							</systemProperties>
 						</configuration>
 					</plugin>
 				</plugins>

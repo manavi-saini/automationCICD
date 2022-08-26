@@ -16,14 +16,21 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@SanityTest
-Feature: Sanity Tests
-  I want to use this template for my sanity tests file
+@RegressionTest1
+Feature: Regression Test 1
+  I want to use this template for my feature file
+  
+  Background: Navigating to a URL
+  Given I navigate to Heroku app URL
 
-  Scenario: Swag Labs Navigation test
-    Given I navigate to SwagLabs URL
-    And I verify title "Swag Labs" is displayed
-
-  Scenario: Ultimate QA Navigation test
+  Scenario: Regression Test - Google Navigation test
+    Given I navigate to Google URL
+    #And I close browser
+        
+  Scenario: Regression Test - Ultimate QA Navigation test
     Given I navigate to Ultimate URL
-    And I verify title "Automation Practice - Ultimate QA" is displayed
+    #And I close browser
+    
+  Scenario: Regression Test - Webdriver URL Navigation test
+    Given I navigate to Webdriver URL
+    #And I close browser

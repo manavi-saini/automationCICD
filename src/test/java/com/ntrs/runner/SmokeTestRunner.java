@@ -10,13 +10,13 @@ import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 
-@CucumberOptions(tags = "@SanityTest", features = "src/test/resources/features", 
+@CucumberOptions(tags = "@SmokeTest", features = "src/test/resources/features", 
 glue = "com.ntrs", plugin= {"json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports/cucumber.html",
 		"html:target/cucumber-html-report","html:target/site/cucumber-pretty","json:target/cucumber-report/cucumber.json",
 		"json:target/cucumber.json","json:target/cucumber.json","rerun:target/rerun.txt","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, monochrome = true)
 
 @Test
-public class SanityTest extends AbstractTestNGCucumberTests {
+public class SmokeTestRunner extends AbstractTestNGCucumberTests {
 	
 //	@Override
 //	@DataProvider(parallel=true)
