@@ -2,6 +2,7 @@ package com.ntrs.managers;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,31 +40,29 @@ public class WebDriverManagement {
 
 		System.out.println("Inside Webdriver = "+name);
 
-		// 		SauceLabs Code		
-		Map<String, Object> sauceOptions = new HashMap<>();
-		sauceOptions.put("username", SAUCE_USERNAME);
-		sauceOptions.put("accessKey", SAUCE_ACCESSKEY);
-		sauceOptions.put("build", "Test Build");
-		sauceOptions.put("name", name);
-
-
-
-
 		if(driverType.equalsIgnoreCase("Firefox")) {
 
 		}
 		else if(driverType.equalsIgnoreCase("Chrome")) {
-
-			//	 		SauceLabs Code			
+			
+			System.out.println("Inside Chrome version block");
+			
+//			WebDriverManager.chromedriver().setup();
+			
 			ChromeOptions browserOptions = new ChromeOptions();
-			browserOptions.setPlatformName("Windows 10");
-			browserOptions.setBrowserVersion("latest");
-			browserOptions.setCapability("sauce:options", sauceOptions);
+			browserOptions.addArguments("--headless");
+			browserOptions.addArguments("--no-sandbox");
+			browserOptions.addArguments("start-maximized");
+//			browserOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+//			browserOptions.setExperimentalOption("useAutomationExtension", false);
+//			browserOptions.addArguments("--ignore-ssl-errors=yes");
+//			browserOptions.addArguments("--ignore-certificate-errors");
 
-			try {
-				URL url = new URL("https://ondemand.apac-southeast-1.saucelabs.com:443/wd/hub");
+			try {				
+				URL url = new URL("http://localhost:4444/wd/hub");
 				RemoteWebDriver remoteDriver = new RemoteWebDriver(url, browserOptions);
 				driver.set(remoteDriver);
+				
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -79,7 +78,8 @@ public class WebDriverManagement {
 	}
 	
 	public void closeDriver() {
-		driver.get().close();
+		//driver.get().close();
+		driver.get().quit();
 	}
 
 }

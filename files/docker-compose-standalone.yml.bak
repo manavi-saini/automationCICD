@@ -1,0 +1,10 @@
+version: "3"
+services:
+    chrome:
+        image: selenium/standalone-chrome:latest
+        hostname: chrome
+        privileged: true
+        volumes:
+            - /dev/shm:/dev/shm
+        ports:
+            - "4444:4444"
