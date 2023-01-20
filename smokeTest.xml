@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name = "Suite2" parallel="classes">
-  <test name = "Smoke Test">
-    <classes>
-          <class name = "com.ntrs.runner.SmokeTestRunner"/>
-     </classes>  
-   </test>
+<suite name="SmokeSuite" parallel="classes">
+
+	<listeners>
+		<listener class-name="com.ntrs.runner.TestListener"></listener>
+	</listeners>
+	
+	<test name="Smoke Test">
+		<classes>
+			<class name="com.ntrs.runner.SmokeTestRunner" />
+		</classes>
+	</test>
 </suite>

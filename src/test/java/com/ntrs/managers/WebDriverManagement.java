@@ -15,6 +15,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.ntrs.runner.TestListener;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.cucumber.java.Scenario;
 
@@ -37,36 +39,24 @@ public class WebDriverManagement {
 	}
 	
 	public RemoteWebDriver setBrowserDriver(String name) {
+		
+		String suiteName1 = TestListener.suiteName;
 
+		System.out.println("Inside Webdriver Suite Name = "+suiteName1);
 		System.out.println("Inside Webdriver = "+name);
 
 		if(driverType.equalsIgnoreCase("Firefox")) {
 
 		}
 		else if(driverType.equalsIgnoreCase("Chrome")) {
-			
-			System.out.println("Inside Chrome version block");
-			
-//			WebDriverManager.chromedriver().setup();
-			
-			ChromeOptions browserOptions = new ChromeOptions();
-			browserOptions.addArguments("--headless");
-			browserOptions.addArguments("--no-sandbox");
-			browserOptions.addArguments("start-maximized");
-//			browserOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-//			browserOptions.setExperimentalOption("useAutomationExtension", false);
-//			browserOptions.addArguments("--ignore-ssl-errors=yes");
-//			browserOptions.addArguments("--ignore-certificate-errors");
 
-			try {				
-				URL url = new URL("http://localhost:4444/wd/hub");
-				RemoteWebDriver remoteDriver = new RemoteWebDriver(url, browserOptions);
-				driver.set(remoteDriver);
-				
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}									
+			// Adding WebdriverManager code
+			WebDriverManager.chromedriver().setup();
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--start-maximized");
+			options.setAcceptInsecureCerts(true);
+			driver.set(new ChromeDriver(options));								
 		}
 
 		driver.get().manage().window().maximize();

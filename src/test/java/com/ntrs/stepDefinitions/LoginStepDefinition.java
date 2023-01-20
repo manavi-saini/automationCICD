@@ -35,6 +35,11 @@ public class LoginStepDefinition {
 		webProducts.openUrl("https://ultimateqa.com/automation");
 	}
 	
+	@Given("I wait for seconds")
+	public void i_wait_for_seconds() throws InterruptedException {
+		Thread.sleep(10000);
+	}
+	
 	@Given("I navigate to Telerik URL")
 	public void i_navigate_to_telerik_url() {
 		webProducts.openUrl("https://www.telerik.com/support/demos");

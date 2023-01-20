@@ -11,8 +11,7 @@ services:
       - "4444:4444"
       
   chrome:
-    image: selenium/node-chrome:latest
-    container_name: selenium-chrome
+    image: selenium/node-chrome-debug:latest
     shm_size: 2g
     depends_on:
       - selenium-hub

@@ -23,7 +23,11 @@ Feature: Smoke Tests
   Scenario: Smoke Test - Swag Labs Navigation test
     Given I navigate to SwagLabs URL
     And I verify title "Swag Labs" is displayed
-
-  Scenario: Smoke Test - Ultimate QA Navigation test
     Given I navigate to Ultimate URL
     And I verify title "Automation Practice - Ultimate QA" is displayed
+    Given I navigate to Ultimate URL
+    Given I navigate to Webdriver URL
+
+  #Scenario: Smoke Test - Ultimate QA Navigation test
+    #Given I navigate to Ultimate URL
+    #And I verify title "Automation Practice - Ultimate QA" is displayed
